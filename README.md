@@ -28,19 +28,19 @@ A Spring-Boot based REST API with the following functions:
 
 # Sequence Diagram
 ## Add Book
-![](D:\Zubair\Workspace\bookstore\SequenceDiagram\BookController_createBook.svg)
+![](https://github.com/zubairidrees/book-store/blob/main/SequenceDiagram/BookController_createBook.svg)
 
 ## Get Book
-![](D:\Zubair\Workspace\bookstore\SequenceDiagram\BookController_getBookById.svg)
+![](https://github.com/zubairidrees/book-store/blob/main/SequenceDiagram/BookController_getBookById.svg)
 
 ## Update Book
-![](D:\Zubair\Workspace\bookstore\SequenceDiagram\BookController_updateBook.svg)
+![](https://github.com/zubairidrees/book-store/blob/main/SequenceDiagram/BookController_updateBook.svg)
 
 ## Delete Book
-![](D:\Zubair\Workspace\bookstore\SequenceDiagram\BookController_deleteBookById.svg)
+![](https://github.com/zubairidrees/book-store/blob/main/SequenceDiagram/BookController_deleteBookById.svg)
 
 ## Checkout
-![](D:\Zubair\Workspace\bookstore\SequenceDiagram\CheckoutController_checkout.svg)
+![](https://github.com/zubairidrees/book-store/blob/main/SequenceDiagram/CheckoutController_checkout.svg)
 
 # Execute Unit Tests
 :\bookstore> mvn clean test
