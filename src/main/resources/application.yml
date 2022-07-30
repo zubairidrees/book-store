@@ -1,0 +1,56 @@
+server:
+  port: '8080'
+  servlet:
+    context-path: /bookstore
+
+springdoc:
+  swagger-ui:
+    operationsSorter: method
+    disable-swagger-default-url: 'true'
+    path: /swagger-ui.html
+  api-docs:
+    path: /api-docs
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  metrics:
+    tags:
+      application: ${spring.application.name}
+  endpoint:
+    metrics:
+      enabled: 'true'
+
+spring:
+  main:
+    log-startup-info: 'false'
+    banner-mode: 'off'
+  datasource:
+    driverClassName: org.h2.Driver
+    password: password
+    username: sa
+    url: jdbc:h2:mem:testdb
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: 'true'
+    show-sql: 'false'
+  sql:
+    init:
+      mode: always
+  application:
+    name: bookstore
+  h2:
+    console:
+      enabled: 'true'
+
+logging:
+  level:
+    org.springframework.transaction.interceptor: ERROR
+    org.springframework : ERROR
+    org.hibernate : ERROR
+    ae.gov.dda.bookstore: INFO
+  file : ${spring.application.name}.log

@@ -1,0 +1,63 @@
+Book.json
+{
+  "author": "Colleen Hoover",
+  "bookClassificationId": 9,
+  "description": "Book Description",
+  "isbn": "1501110365",
+  "name": "It Ends with Us: A Novel",
+  "price": 250
+}
+
+{
+  "author": "Penguin ",
+  "bookClassificationId": 9,
+  "description": "Book Description 2",
+  "isbn": "0735219109",
+  "name": "Where the Crawdads Sing",
+  "price": 300
+}
+
+{
+  "author": "Berkley",
+  "bookClassificationId": 10,
+  "description": "Book Description 3",
+  "isbn": "0593334833",
+  "name": "Book Lovers",
+  "price": 500
+}
+
+{
+  "author": "Jenny Han",
+  "bookClassificationId": 10,
+  "description": "Book Description 4",
+  "isbn": "1416995595",
+  "name": "We'll Always Have Summer",
+  "price": 300
+}
+
+
+Promotion.json
+{
+  "description": "Summer Sale 2022",
+  "name": "Summer Sale",
+  "promoCode": "SUMMER22",
+}
+
+Discount.json
+{
+  "bookClassificationId": 9,
+  "discountPercentage": 20,
+  "promoId": 1
+}
+
+{
+  "bookClassificationId": 10,
+  "discountPercentage": 10,
+  "promoId": 1
+}
+
+checkout.json
+{
+  "bookIDs": [4, 5, 6, 7],
+  "promoCode": "SUMMER22"
+}
